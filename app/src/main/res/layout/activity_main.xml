@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnToNumberone"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="moveToNumberOne"
+        android:padding="16dp"
+        android:text="Number One"
+        android:textSize="20dp"
+        app:backgroundTint="@color/textColorPrimary"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        app:rippleColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnToNumbertwo"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="moveToNumberTwo"
+        android:padding="16dp"
+        android:text="Number Two"
+        android:textSize="20dp"
+        app:backgroundTint="@color/textColorPrimary"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btnToNumberonethree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnToNumberone"
+        app:layout_constraintVertical_bias="0.391"
+        app:rippleColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnToNumberonethree"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="moveToNumberThree"
+        android:padding="16dp"
+        android:text="Number Three"
+        android:textSize="20dp"
+        app:backgroundTint="@color/textColorPrimary"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btnToNumberonefour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnToNumbertwo"
+        app:layout_constraintVertical_bias="0.52"
+        app:rippleColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnToNumberonefour"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="moveToNumberFour"
+        android:padding="16dp"
+        android:text="Number Four"
+        android:textSize="20dp"
+        app:backgroundTint="@color/textColorPrimary"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnToNumberonethree"
+        app:layout_constraintVertical_bias="0.649"
+        app:rippleColor="@color/colorPrimaryDark" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
